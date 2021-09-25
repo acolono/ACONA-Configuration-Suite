@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_acona_var_description
+    - node.type.acona_variable
+  module:
+    - text
+id: node.acona_variable.field_acona_var_description
+field_name: field_acona_var_description
+entity_type: node
+bundle: acona_variable
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

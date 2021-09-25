@@ -1,0 +1,38 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.acona_variable.field_acona_data_table
+    - field.field.node.acona_variable.field_acona_services
+    - field.field.node.acona_variable.field_acona_source_info
+    - field.field.node.acona_variable.field_acona_unit
+    - field.field.node.acona_variable.field_acona_var_description
+    - field.field.node.acona_variable.field_acona_var_machine_name
+    - field.field.node.acona_variable.field_acona_var_status
+    - field.field.node.acona_variable.field_acona_variable_type
+    - node.type.acona_variable
+  module:
+    - user
+id: node.acona_variable.teaser
+targetEntityType: node
+bundle: acona_variable
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_acona_data_table: true
+  field_acona_services: true
+  field_acona_source_info: true
+  field_acona_unit: true
+  field_acona_var_description: true
+  field_acona_var_machine_name: true
+  field_acona_var_status: true
+  field_acona_variable_type: true
+  langcode: true
+  search_api_excerpt: true
+  shariff_field: true

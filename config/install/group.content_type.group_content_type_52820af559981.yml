@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.domain
+    - node.type.acona_page_type
+  module:
+    - gnode
+    - node
+id: group_content_type_52820af559981
+label: 'Domain: Group node (Page type)'
+description: 'Adds <em class="placeholder">Page type</em> content to groups both publicly and privately.'
+group_type: domain
+content_plugin: 'group_node:acona_page_type'
+plugin_config:
+  group_cardinality: 3
+  entity_cardinality: 1
+  use_creation_wizard: false

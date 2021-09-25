@@ -1,0 +1,3 @@
+excluded:
+  - facets.facet_source.search_api__views_page__content_search_api__page_1
+required: true

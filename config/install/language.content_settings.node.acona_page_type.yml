@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.acona_page_type
+id: node.acona_page_type
+target_entity_type_id: node
+target_bundle: acona_page_type
+default_langcode: site_default
+language_alterable: false

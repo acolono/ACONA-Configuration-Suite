@@ -1,0 +1,99 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.service.field_acona_oauth_client_id
+    - field.field.node.service.field_acona_service
+    - field.field.node.service.field_acona_service_key
+    - field.field.node.service.field_oauth_client_secret
+    - node.type.service
+  module:
+    - password_field
+    - scheduler
+    - scheduler_content_moderation_integration
+id: node.service.default
+targetEntityType: node
+bundle: service
+mode: default
+content:
+  field_acona_oauth_client_id:
+    weight: 8
+    settings:
+      size: 60
+    third_party_settings: {  }
+    type: PasswordWidget
+    region: content
+  field_acona_service:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_acona_service_key:
+    weight: 7
+    settings:
+      size: 60
+    third_party_settings: {  }
+    type: PasswordWidget
+    region: content
+  field_oauth_client_secret:
+    weight: 9
+    settings:
+      size: 60
+    third_party_settings: {  }
+    type: PasswordWidget
+    region: content
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  publish_on:
+    type: datetime_timestamp_no_default
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  publish_state:
+    type: scheduler_moderation
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 10
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  unpublish_on:
+    type: datetime_timestamp_no_default
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  unpublish_state:
+    type: scheduler_moderation
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  moderation_state: true
+  path: true
+  promote: true
+  sticky: true
+  uid: true
+  url_redirects: true

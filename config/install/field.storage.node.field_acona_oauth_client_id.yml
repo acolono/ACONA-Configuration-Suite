@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - password_field
+id: node.field_acona_oauth_client_id
+field_name: field_acona_oauth_client_id
+entity_type: node
+type: Password
+settings: {  }
+module: password_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,45 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.acona_variable_definition.field_acona_var_relevance
+    - field.field.paragraph.acona_variable_definition.field_acona_var_type
+    - field.field.paragraph.acona_variable_definition.field_acona_variable
+    - paragraphs.paragraphs_type.acona_variable_definition
+  module:
+    - empty_fields
+    - options
+id: paragraph.acona_variable_definition.preview
+targetEntityType: paragraph
+bundle: acona_variable_definition
+mode: preview
+content:
+  field_acona_var_relevance:
+    weight: 2
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_acona_var_type:
+    weight: 1
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_acona_variable:
+    weight: 0
+    label: hidden
+    settings:
+      link: false
+    third_party_settings:
+      empty_fields:
+        handler: ''
+    type: entity_reference_label
+    region: content
+hidden:
+  search_api_excerpt: true

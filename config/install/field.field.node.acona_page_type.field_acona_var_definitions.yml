@@ -1,0 +1,57 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_acona_var_definitions
+    - node.type.acona_page_type
+    - paragraphs.paragraphs_type.acona_variable_definition
+  module:
+    - entity_reference_revisions
+id: node.acona_page_type.field_acona_var_definitions
+field_name: field_acona_var_definitions
+entity_type: node
+bundle: acona_page_type
+label: 'For this page type relevant variables'
+description: 'Here you can define variables or metrics that should define your ACONA Success Score for this page type. '
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      acona_variable_definition: acona_variable_definition
+    target_bundles_drag_drop:
+      acona_variable_definition:
+        enabled: true
+        weight: 11
+      gallery:
+        weight: 12
+        enabled: false
+      image:
+        weight: 13
+        enabled: false
+      instagram:
+        weight: 14
+        enabled: false
+      link:
+        weight: 15
+        enabled: false
+      pinterest:
+        weight: 16
+        enabled: false
+      quote:
+        weight: 17
+        enabled: false
+      text:
+        weight: 18
+        enabled: false
+      twitter:
+        weight: 19
+        enabled: false
+      video:
+        weight: 20
+        enabled: false
+field_type: entity_reference_revisions

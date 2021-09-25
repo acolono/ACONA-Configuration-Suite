@@ -1,0 +1,35 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.acona_variable_definition.field_acona_var_relevance
+    - field.field.paragraph.acona_variable_definition.field_acona_var_type
+    - field.field.paragraph.acona_variable_definition.field_acona_variable
+    - paragraphs.paragraphs_type.acona_variable_definition
+id: paragraph.acona_variable_definition.default
+targetEntityType: paragraph
+bundle: acona_variable_definition
+mode: default
+content:
+  field_acona_var_relevance:
+    weight: 2
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_acona_var_type:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_acona_variable:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true

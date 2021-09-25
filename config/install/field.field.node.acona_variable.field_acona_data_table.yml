@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_acona_data_table
+    - node.type.acona_variable
+id: node.acona_variable.field_acona_data_table
+field_name: field_acona_data_table
+entity_type: node
+bundle: acona_variable
+label: 'Data table'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

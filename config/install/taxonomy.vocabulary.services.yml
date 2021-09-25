@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+name: Services
+vid: services
+description: 'Available ACONA services as data sources'
+weight: 0

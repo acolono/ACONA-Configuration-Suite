@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_acona_services
+    - node.type.acona_variable
+    - taxonomy.vocabulary.services
+id: node.acona_variable.field_acona_services
+field_name: field_acona_services
+entity_type: node
+bundle: acona_variable
+label: Source(s)
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      services: services
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

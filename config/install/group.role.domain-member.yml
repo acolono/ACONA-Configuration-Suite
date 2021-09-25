@@ -1,0 +1,34 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.domain
+id: domain-member
+label: Member
+weight: -100
+internal: true
+audience: member
+group_type: domain
+permissions_ui: true
+permissions:
+  - 'create group_node:acona_page_type entity'
+  - 'create group_node:service entity'
+  - 'create group_node:url entity'
+  - 'delete own group_node:acona_page_type entity'
+  - 'delete own group_node:service entity'
+  - 'delete own group_node:url entity'
+  - 'edit group'
+  - 'update any group_node:acona_page_type entity'
+  - 'update any group_node:service entity'
+  - 'update any group_node:url entity'
+  - 'update own group_node:acona_page_type entity'
+  - 'update own group_node:service entity'
+  - 'update own group_node:url entity'
+  - 'view group'
+  - 'view group_node:acona_page_type entity'
+  - 'view group_node:service entity'
+  - 'view group_node:url entity'
+  - 'view own unpublished group'
+  - 'view unpublished group_node:acona_page_type entity'
+  - 'view unpublished group_node:service entity'
+  - 'view unpublished group_node:url entity'

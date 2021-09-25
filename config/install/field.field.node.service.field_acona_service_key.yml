@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_acona_service_key
+    - node.type.service
+  module:
+    - password_field
+id: node.service.field_acona_service_key
+field_name: field_acona_service_key
+entity_type: node
+bundle: service
+label: 'API Key'
+description: 'API Key, e.g. for Matomo.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: Password

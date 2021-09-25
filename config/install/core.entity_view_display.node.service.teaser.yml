@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.service.field_acona_oauth_client_id
+    - field.field.node.service.field_acona_service
+    - field.field.node.service.field_acona_service_key
+    - field.field.node.service.field_oauth_client_secret
+    - node.type.service
+  module:
+    - user
+id: node.service.teaser
+targetEntityType: node
+bundle: service
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_acona_oauth_client_id: true
+  field_acona_service: true
+  field_acona_service_key: true
+  field_oauth_client_secret: true
+  langcode: true
+  search_api_excerpt: true
+  shariff_field: true

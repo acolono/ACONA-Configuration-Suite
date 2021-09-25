@@ -1,0 +1,36 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.url.body
+    - field.field.node.url.field_acona_page_type
+    - field.field.node.url.field_url
+    - node.type.url
+  module:
+    - text
+    - user
+id: node.url.teaser
+targetEntityType: node
+bundle: url
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_acona_page_type: true
+  field_url: true
+  langcode: true
+  search_api_excerpt: true
+  shariff_field: true

@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_acona_variable
+    - node.type.acona_variable
+    - paragraphs.paragraphs_type.acona_variable_definition
+id: paragraph.acona_variable_definition.field_acona_variable
+field_name: field_acona_variable
+entity_type: paragraph
+bundle: acona_variable_definition
+label: Variable
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      acona_variable: acona_variable
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

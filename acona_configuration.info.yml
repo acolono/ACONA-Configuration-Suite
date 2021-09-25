@@ -1,0 +1,39 @@
+name: 'ACONA Configuration'
+type: module
+core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - content_moderation
+  - datetime
+  - empty_fields
+  - entity_browser
+  - entity_reference_actions
+  - entity_reference_revisions
+  - features
+  - field
+  - field_group
+  - focal_point
+  - gnode
+  - group
+  - image
+  - inline_entity_form
+  - language
+  - link
+  - media
+  - menu_ui
+  - metatag
+  - node
+  - options
+  - paragraphs
+  - paragraphs_features
+  - password_field
+  - path
+  - rest
+  - scheduler
+  - scheduler_content_moderation_integration
+  - select2
+  - serialization
+  - taxonomy
+  - text
+  - thunder_workflow
+  - user
+  - views
