@@ -4,10 +4,10 @@
   "type": "drupal-module",
   "license": "GPL-2.0-or-later",
   "require": {
-      "drupal/core": "^8.8 || ^9",
-      "drupal/group": "^1",
+      "drupal/core": "^8.8 || ^9 || ^10 || ^11",
+      "drupal/group": "^1 || ^2 || ^3",
       "drupal/password_field": "^1",
       "drupal/restui": "^1",
-      "thunder/thunder-distribution": "^6"
+      "thunder/thunder-distribution": "^6 || ^7 || ^8"
   }
 }
